@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 //Declaración de clase
 public class Paradigma{
@@ -33,6 +34,10 @@ public class Paradigma{
         auto2.acelerar(12);
         System.out.println(auto2.marca+" "+auto2.modelo+" "+auto2.color+" "+auto2.velocidad);
         
+        auto2.imprimirVelocidad();
+        System.out.println(auto2.obtenerVelocidad());
+        JOptionPane.showMessageDialog(null, "Velocidad : "+auto2.obtenerVelocidad());
+
     }
 
 } //end class Paradigma
@@ -57,6 +62,16 @@ class Auto{
 
     void frenar(){
         velocidad=velocidad-10;
+    }
+
+    //No retorna valor (void)
+    void imprimirVelocidad(){
+        System.out.println(velocidad);
+    }
+
+    // retorna un valor entero
+    int obtenerVelocidad(){
+        return velocidad;
     }
 
 } //end class Auto
