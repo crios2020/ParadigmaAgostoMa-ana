@@ -87,3 +87,17 @@ class Cliente{
     int edad;
     Cuenta cuenta;
 }
+
+
+// Obtiene el cliente
+ClienteIndividuo c = new ClienteIndividuo("27014589");
+
+// Obtiene la caja de ahorro del cliente
+CajaDeAhorro cda = c.obtenerCajaDeAhorro();
+
+// Realiza el deposito
+cda.depositar(2500);
+
+c.obtenerCajaDeAhorro().depositar(2500);
+
+

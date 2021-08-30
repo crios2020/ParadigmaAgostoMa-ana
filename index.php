@@ -36,6 +36,7 @@
 
     echo '<h3>-- cuenta1 --</h3>';
     $cuenta1=new Cuenta(1,'arg$');
+	//$cuentax=new Cuenta();		//error
 
     //$cuenta1->saldo=300000000;
     $cuenta1->depositar(20000);
